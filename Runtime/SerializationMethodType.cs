@@ -1,4 +1,4 @@
-﻿namespace Gameframe.SaveLoad
+namespace Gameframe.SaveLoad
 {
     public enum SerializationMethodType
     {
@@ -10,10 +10,8 @@
         UnityJson = 2,
         UnityJsonEncrypted = 102,
         
-#if JSON_DOT_NET
         JsonDotNet = 3,
         JsonDotNetEncrypted = 103,
-#endif
         
         Custom = 1000
     }
