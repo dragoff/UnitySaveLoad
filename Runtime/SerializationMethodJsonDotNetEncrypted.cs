@@ -1,5 +1,3 @@
-﻿#if JSON_DOT_NET
-
 using System;
 using System.IO;
 using Newtonsoft.Json;
@@ -89,5 +87,3 @@ namespace Gameframe.SaveLoad
 
     }
 }
-
-#endif

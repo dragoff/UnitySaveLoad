@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -313,14 +313,12 @@ namespace Gameframe.SaveLoad
                     method = new SerializationMethodUnityJsonEncrypted(key,salt);
                     break;
                 
-#if JSON_DOT_NET
                 case SerializationMethodType.JsonDotNet:
                     method = new SerializationMethodJsonDotNet();
                     break;
                 case SerializationMethodType.JsonDotNetEncrypted:
                     method = new SerializationMethodJsonDotNetEncrypted(key,salt);
                     break;
-#endif
                 
                 case SerializationMethodType.Custom:
                     throw new MissingComponentException("SerializationMethodType is Custom but no custom ISerializationMethod was found.");
